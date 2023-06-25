@@ -1,7 +1,7 @@
 <script lang="ts">
   import { Label, Input, Button } from "flowbite-svelte";
   import TodoTable from "../components/TodoTable.svelte";
-
+  import Footer from "../components/Footer.svelte";
 
   let todo = "";
   let todoList: { id: number; todo: string; completed: boolean }[] = [
@@ -26,9 +26,7 @@
     todoList = temp;
   }
 
-  function saveTodo() {
-    
-  }
+  function saveTodo() {}
 </script>
 
 <div class="mb-6 m-16">
@@ -44,4 +42,8 @@
 
 <div class="m-16 p-4 bg-slate-200 rounded-lg">
   <TodoTable data={todoList} {removeTodo} />
+</div>
+
+<div>
+  <Footer />
 </div>

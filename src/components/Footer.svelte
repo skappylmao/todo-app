@@ -1,0 +1,1 @@
+<p class="m-16">made by skappylmao, source code on <a href="https://github.com/skappylmao/todo-app" class="hover:underline hover:text-orange-500">github</a></p>
